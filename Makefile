@@ -1,6 +1,6 @@
 # Targets and Commands
 run:
-	node --watch src/app.js
+	node --watch ./server.js
 
 install:
 	npm install
