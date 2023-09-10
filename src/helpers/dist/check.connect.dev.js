@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
-var os = require('os');
+var os = require("os");
 
-var process = require('process');
+var process = require("process");
 
 var _SECONDS = 5000; // count connect
 
@@ -12,7 +12,6 @@ var countConnect = function countConnect() {
   var numConnection = mongoose.connections.length;
   console.log("Number of connection: ".concat(numConnection));
 }; // check over load
-
 
 var checkOverLoad = function checkOverLoad() {
   // Monitor every 5 seconds
@@ -33,5 +32,5 @@ var checkOverLoad = function checkOverLoad() {
 
 module.exports = {
   countConnect: countConnect,
-  checkOverLoad: checkOverLoad
+  checkOverLoad: checkOverLoad,
 };
