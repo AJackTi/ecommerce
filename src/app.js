@@ -3,7 +3,7 @@ const express = require("express");
 const morgan = require("morgan");
 const helmet = require("helmet");
 const compression = require("compression");
-const { checkOverLoad } = require("./helpers/check.connect");
+// const { checkOverLoad } = require("./helpers/check.connect");
 
 const app = express();
 
@@ -25,7 +25,7 @@ app.use(
 // init db
 // require('./dbs/init.mongodb.lv0')
 require("./dbs/init.mongodb");
-checkOverLoad();
+// checkOverLoad();
 
 // init routes
 app.use("/", require("./routes"));

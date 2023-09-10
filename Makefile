@@ -5,4 +5,10 @@ run:
 install:
 	npm install
 
-.PHONY: run install
+docker-up:
+	docker-compose -f docker-compose.yml up -d
+
+docker-down:
+	docker-compose down
+
+.PHONY: run install docker-up docker-down
